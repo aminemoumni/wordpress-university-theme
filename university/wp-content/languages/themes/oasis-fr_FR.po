@@ -1,0 +1,124 @@
+# Translation of Themes - Oasis in French (France)
+# This file is distributed under the same license as the Themes - Oasis package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-06-15 19:48:05+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: fr\n"
+"Project-Id-Version: Themes - Oasis\n"
+
+#: inc/FrontPageHero.php:35
+msgid "Make texts white"
+msgstr "Rendre les textes blancs"
+
+#: template-parts/main/post.php:23
+msgid "{COMMENTS-COUNT} Responses"
+msgstr "{COMMENTS-COUNT} réponses"
+
+#: template-parts/main/post.php:22
+msgid "One response"
+msgstr "Une réponse"
+
+#: template-parts/main/post.php:21
+msgid "No responses yet"
+msgstr "Aucune réponse pour l’instant"
+
+#: template-parts/main/404.php:23
+msgid "Go to Homepage!"
+msgstr "Aller à la page d’accueil !"
+
+#: template-parts/layout-wrapper-content/tags-container-1.php:9
+msgid "Tags:"
+msgstr "Étiquettes :"
+
+#: template-parts/layout-wrapper-content/navigation-container-1.php:28
+msgid "Next post"
+msgstr "Article suivant"
+
+#: template-parts/layout-wrapper-content/navigation-container-1.php:27
+msgid "Previous post:"
+msgstr "Article précédent :"
+
+#: template-parts/layout-wrapper-content/navigation-container-1.php:11
+msgid "Next post:"
+msgstr "Article suivant :"
+
+#: template-parts/layout-wrapper-content/navigation-container-1.php:10
+msgid "Previous post"
+msgstr "Article précédent"
+
+#: template-parts/layout-wrapper-content/categories-container-1.php:9
+msgid "Categories:"
+msgstr "Catégories :"
+
+#: template-parts/layout-wrapper-content/navigation-container-3.php:11
+#: template-parts/layout-wrapper-content/navigation-container-3.php:37
+#: template-parts/layout-wrapper-content/navigation-container-2.php:37
+msgid "Back"
+msgstr "Retour"
+
+#: template-parts/layout-wrapper-content/navigation-container-2.php:11
+msgid "Previous"
+msgstr "Précédent"
+
+#: template-parts/layout-wrapper-content/navigation-container-3.php:10
+#: template-parts/layout-wrapper-content/navigation-container-3.php:36
+#: template-parts/layout-wrapper-content/navigation-container-2.php:10
+#: template-parts/layout-wrapper-content/navigation-container-2.php:36
+msgid "Next"
+msgstr "Suivant"
+
+#: template-parts/main/archive_item_template.php:75
+#: template-parts/layout-wrapper-content/categories-container-2.php:63
+msgid "read more"
+msgstr "lire la suite"
+
+#: template-parts/main/archive_item_template.php:47
+#: template-parts/main/item_template.php:41
+#: template-parts/layout-wrapper-content/categories-container-2.php:43
+msgid "at"
+msgstr "à"
+
+#: template-parts/main/archive_item_template.php:38
+#: template-parts/main/item_template.php:32
+#: template-parts/layout-wrapper-content/categories-container-2.php:34
+msgid "on"
+msgstr "on"
+
+#: template-parts/main/archive_item_template.php:29
+#: template-parts/main/item_template.php:23
+#: template-parts/layout-wrapper-content/categories-container-2.php:25
+msgid "by"
+msgstr "par"
+
+#: functions.php:60
+msgid "%s is easy to learn and master, but you can always check out our documentation to learn about some features you might have missed."
+msgstr "%s est facile à apprendre et à maîtriser, mais vous pouvez toujours consulter notre documentation pour vérifier les fonctionnalités que vous auriez pu manquer."
+
+#: functions.php:51
+msgid "%1$s plugin adds drag and drop functionality and many other features to the %2$s theme."
+msgstr "L’extension %1$s ajoute une fonctionnalité de glisser/déposer et bien d’autres fonctionnalités au thème %2$s."
+
+#: functions.php:49
+msgid "%s Settings"
+msgstr "Réglages de %s"
+
+#: admin/admin-notice.php:71
+msgid "This action will also install the Colibri Page Builder plugin."
+msgstr "Cette action va aussi installer l’extension de constructeur de page Colibri."
+
+#: admin/admin-notice.php:59
+msgid "Maybe Later"
+msgstr "Peut-être plus tard"
+
+#: admin/admin-notice.php:55
+msgid "Install the Oasis homepage"
+msgstr "Installer la page d’accueil d’Oasis"
+
+#: admin/admin-notice.php:50
+msgid "Would you like to install the pre-designed Oasis homepage?"
+msgstr "Voulez-vous installer la page d’accueil pré-conçue d’Oasis ?"
