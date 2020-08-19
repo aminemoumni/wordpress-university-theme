@@ -172,4 +172,4 @@ function ourLoginCSS(){
 function wpb_login_logo_url_title() {
     return 'Fictional University';
 }
-add_filter('l
+add_filter('login_headertitle', 'wpb_login_logo_url_title' );
