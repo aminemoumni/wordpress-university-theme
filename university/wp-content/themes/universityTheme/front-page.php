@@ -84,39 +84,31 @@
     </div>
 
     <div class="hero-slider">
-      <div data-glide-el="track" class="glide__track">
-        <div class="glide__slides">
-          <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/bus.jpg') ?>);">
-            <div class="hero-slider__interior container">
-              <div class="hero-slider__overlay">
-                <h2 class="headline headline--medium t-center">Free Transportation</h2>
-                <p class="t-center">All students have free unlimited bus fare.</p>
-                <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/apples.jpg') ?>);">
-            <div class="hero-slider__interior container">
-              <div class="hero-slider__overlay">
-                <h2 class="headline headline--medium t-center">An Apple a Day</h2>
-                <p class="t-center">Our dentistry program recommends eating apples.</p>
-                <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/bread.jpg') ?>);">
-            <div class="hero-slider__interior container">
-              <div class="hero-slider__overlay">
-                <h2 class="headline headline--medium t-center">Free Food</h2>
-                <p class="t-center">Fictional University offers lunch plans for those in need.</p>
-                <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
-              </div>
-            </div>
+    <?php
+      $slideshows = new WP_Query(array(
+      'posts_per_page' => 1,
+      'post_type' => 'slideshow'
+      )
+    );
+      while ($slideshows->have_posts()) {
+            $slideshows->the_post(); 
+      if (has_post_thumbnail()) {
+         $featured_image = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
+        } 
+        $link_text = get_field('slide_link_text');
+        $link_value = get_field('slide_link_value');
+        ?>
+      <div class="hero-slider__slide" style="background-image: url(<?php if (has_post_thumbnail()) {echo $featured_image; } else {echo get_theme_file_uri('/images/bus.jpg');} ?>)">
+        <div class="hero-slider__interior container">
+          <div class="hero-slider__overlay">
+            <h2 class="headline headline--medium t-center"><?php the_title(); ?></h2>
+            <p class="t-center"><?php if (has_excerpt()) {echo get_the_excerpt();} ?></p>
+            <p class="t-center no-margin"><a href="<?php echo site_url($link_value); ?>" class="btn btn--blue"><?php echo $link_text; ?></a></p>
           </div>
         </div>
-        <div class="slider__bullets glide__bullets" data-glide-el="controls[nav]"></div>
       </div>
-    </div>
+      <?php } wp_reset_postdata();?> 
+  </div>
 
 
 <?php get_footer(); ?>

@@ -99,8 +99,50 @@ function university_post_types(){
             'singular_name' => 'Note'
         ),
         'menu_icon' => 'dashicons-welcome-write-blog',
+        'capability_type' => 'note', // to show into members roles
+        'map_meta_cap' => true, // to show into members roles for requirements
 
     ));
+
+     ////////////////////////////////// Like post type
+    register_post_type('like', array(
+    	'supports' => array('title', 'editor'),
+    	'rewrite' => array(
+    		'slug' => 'notes'
+    	),
+        'public' => false,
+        'show_ui' => true,
+        'labels' => array(
+            'name' => 'Likes',
+            'add_new_item' => 'Ajouter un nouvel like',
+            'edit_item' => 'Modifier le like',
+            'all_items' => 'Toutes les likes',
+            'singular_name' => 'Like'
+        ),
+        'menu_icon' => 'dashicons-heart',
+    ));
+
+    ////////////////////////////////// Like post type
+    register_post_type('slideshow', array(
+    	'capability_type' => 'slideshows',
+    	'map_meta_cap' => true,
+    	'supports' => array('title', 'thumbnail', 'excerpt'),
+    	'rewrite' => array(
+    		'slug' => 'slideshows'
+    	),
+        'public' => false,
+        'show_ui' => true,
+        'labels' => array(
+            'name' => 'Slideshows',
+            'add_new_item' => 'Ajouter un nouvel slideshows',
+            'edit_item' => 'Modifier le slideshow',
+            'all_items' => 'Toutes les slideshows',
+            'singular_name' => 'Slideshow'
+        ),
+        'menu_icon' => 'dashicons-images-alt2',
+    ));
+
+
 }
 
 add_action('init', 'university_post_types');
